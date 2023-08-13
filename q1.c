@@ -1,0 +1,25 @@
+# include <stdio.h>
+
+int main(){
+    char c;
+    int i = 0;
+    int count = 0;
+
+do{
+c = i;
+printf(" %c", c);
+count ++;
+ if (count == 10){
+    printf ("\n");
+    count = 0;
+ }
+i++;
+
+}while (i<= 127);
+
+}
+
+//b main
+// b 15 if c == 'a'
+// bt (frames)
+// 
