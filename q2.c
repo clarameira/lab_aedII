@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int contarDias(int dia, int mes, int ano) {
+int contarDias(int dia, int mes, int ano){
+    int i; 
     int diasPorMesFixo[13];  // O array tem 13 elementos para corresponder aos meses de 1 a 12
-    for (int i = 1; i <= 12; i++) {
+    for (i = 1; i <= 12; i++) {
         diasPorMesFixo[i] = 30;  // Definindo todos os meses com 30 dias
     }
 
     int dias = dia;
-    for (int i = 1; i < mes; i++) {
+    for (i = 1; i < mes; i++) {
         dias += diasPorMesFixo[i];
     }
     return dias;
