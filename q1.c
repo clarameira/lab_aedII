@@ -1,4 +1,4 @@
-# include <stdio.h>
+#include <stdio.h>
 
 int main(){
 
@@ -9,16 +9,16 @@ int main(){
 do{
 c = i;
 printf(" %c", c);
-count ++;
- if (count == 10){
-    printf ("\n");
-    count = 0;
- }
+    count ++;
+    if (count == 10){
+        printf ("\n");
+            count = 0;
+    }
 
 i++;
-
 }while (i<= 127);
 
+return (0);
 }
 
 
