@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 int isPerfect(int num){
@@ -14,11 +15,15 @@ int isPerfect(int num){
 }
 
 int main(){
-    int numero;
+
+    int numero, result;
+
     printf("Digite um número para verificar se é perfeito: ");
     scanf("%d", &numero);
 
-    if (isPerfect(numero)){
+    result = isPerfect(numero);
+
+    if (result == numero){
         printf("%d e um numero perfeito.\n", numero);
     } else{
         printf("%d nao e um numero perfeito.\n", numero);
